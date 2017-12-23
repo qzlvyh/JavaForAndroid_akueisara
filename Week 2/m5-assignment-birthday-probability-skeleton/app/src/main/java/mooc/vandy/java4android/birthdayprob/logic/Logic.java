@@ -78,7 +78,7 @@ public class Logic
      * We provide you this method that way we can test it with unit testing.
      */
     public double calculate(int size, int count) {
-        // TODO -- add your code here
+      // TODO -- add your code here
         Random random = new Random();
         int duplicateCount = 0;
         for (int i = 0; i < count; i++) {
@@ -90,11 +90,16 @@ public class Logic
                 birthdayCount[n]++;
                  //以随机产生的生日天数的值(n)作为数组的顺序号，使这个顺序号对应的数组
                   //元素值加1
-                if(birthdayCount[n] >= 2) {
-                    duplicateCount++;
-                    break;
-                }
+                //if(birthdayCount[n] >= 2) {
+                    //duplicateCount++;
+                   // break;
+                //}
             }
+		for (int k = 0; j <365 ; k++) {    
+                if birthdayCount[k] >= 2 {
+					duplicateCount++;
+                } 
+              }			
         }
         return duplicateCount * 100.0 / count;
     }
