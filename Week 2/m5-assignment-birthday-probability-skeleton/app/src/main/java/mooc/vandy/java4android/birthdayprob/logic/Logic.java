@@ -82,7 +82,8 @@ public class Logic
         Random random = new Random();
         int duplicateCount = 0;
         for (int i = 0; i < count; i++) {
-            int birthdayCount[] = new int[365];
+            //int birthdayCount[] = new int[365];
+               int [] birthdayCount = new int[365];
             random.setSeed(i+1);
             for (int j = 0; j <size ; j++) {
                 int n = random.nextInt(365);
