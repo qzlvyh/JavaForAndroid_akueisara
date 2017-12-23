@@ -88,6 +88,8 @@ public class Logic
             for (int j = 0; j <size ; j++) {
                 int n = random.nextInt(365);
                 birthdayCount[n]++;
+                 //以生日天数的值作为数组的顺序号，n是随机产生的值，这个值（某天）作为数组顺序号，使这个顺序号对应的数组
+                  //元素值加1
                 if(birthdayCount[n] >= 2) {
                     duplicateCount++;
                     break;
